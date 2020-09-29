@@ -1,0 +1,382 @@
+body{
+    
+    font-family:'Open Sans', sans-serif;
+
+}   
+
+/* ESTILO DE HEADER */
+
+header img{
+  
+    height: 70px;
+}
+
+header p{
+    padding-left:25px;
+    font-size: 25px;
+    width: 40%;
+}
+ul{
+    width:50%;
+    list-style-type:none;
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+}
+li{
+    float:right;
+}
+li a{
+    color:white;
+    text-align: center;
+    padding: 25px;
+    text-decoration: none;
+}
+.Cabecera{
+    position: relative;
+}
+
+header{
+    position:relative;
+    top: 0;
+    margin: 0;
+    padding:0;
+    background-color: white;
+    display:flex;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    width:98vw;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: black;
+}
+a:hover{
+    color:#81dfaa;
+}
+
+@media only screen and (max-width:700px){
+    ul{
+        width:100%; 
+        margin-bottom:10px;
+    }
+    ul a{
+        padding:5px;
+        margin-left:10px;
+    }
+    li{
+        float:left;
+    }
+    header p{
+        width: 70%;
+        font-size:20px;
+    }
+    header img{
+        height: 35px;
+    }
+    
+
+
+}
+
+/* IMAGEN PRINCIPAL */
+
+.ImagenPrincipal img{
+   width: 98vw; 
+}
+.ImagenPrincipal{
+   
+    position:relative;
+    
+}
+
+.ImagenPrincipal h1{ 
+
+    color: dimgray;
+    font-size: 4vw;
+    position: absolute;
+    left:35vw;
+    bottom: 15vw;
+}
+
+/* SOBRE MI  */
+
+.Aboutme{
+
+   width:98vw;
+   display: flex;
+   
+   flex-direction: column;
+   align-items:center;
+   align-content: center;
+   background-color:#dfdfdf;
+
+   position: relative;
+   bottom: 5px;
+
+
+}
+.Aboutme h2 p{
+    color:#333;
+}
+    
+
+
+
+.Aboutme p{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+/* /*CONOCIMIENTOS */
+
+.Conocimientos h2{
+    padding-left:42vw;
+
+}
+.Conocimientos{
+    width:98vw;
+    padding-left: 40px;
+    height:1000px;
+    background-color: white;
+    width:98vw;
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+}
+.Studio,.Vray, .AfterEffects, .Photoshop, .Autocad, .HTMLCSS {
+   
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    
+}
+.Studio p, .Vray p, .AfterEffects p, .Photoshop p, .Autocad p, .HTMLCSS p{
+    padding-left: 10px;
+    width:15vw;
+}
+.Studio div{
+   background-color:#afdbdc;
+   width: 70vw;
+   height: 20px;
+   position: relative;
+   animation-name: Studio;
+   animation-duration: 2s;
+   animation-delay: 3s;
+   animation-iteration-count: 3;
+
+} 
+@keyframes Studio{
+
+    0%{width:0vw;}
+    100%{width:70vw;}
+}
+.Vray div{
+    background-color:#afdbdc;
+    width: 67vw;
+    height: 20px;
+    position: relative;
+    animation-name: Vray;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+ 
+ } 
+ @keyframes Vray{
+ 
+     0%{width:0vw;}
+     100%{width:67vw;}
+ }
+
+ .AfterEffects div{
+    background-color:#f6a298;
+    width: 50vw;
+    height: 20px;
+    position: relative;
+    animation-name: After;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+ 
+ } 
+ @keyframes After{
+ 
+     0%{width:0vw;}
+     100%{width:50vw;}
+ }
+ 
+ .Photoshop div{
+    background-color:#f6a298;
+    width: 57vw;
+    height: 20px;
+    position: relative;
+    animation-name: Foto;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+ 
+ } 
+ @keyframes Foto{
+ 
+     0%{width:0vw;}
+     100%{width:55vw;}
+ }
+
+ .Autocad div{
+    background-color:#f7dc4f;
+    width: 60vw;
+    height: 20px;
+    position: relative;
+    animation-name: Autocad;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+ 
+ } 
+ @keyframes Autocad{
+ 
+     0%{width:0vw;}
+     100%{width:60vw;}
+ }
+ 
+ .HTMLCSS div{
+    background-color:#81dfaa;
+    width: 15vw;
+    height: 20px;
+    position: relative;
+    animation-name: WEB;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+ 
+ } 
+ @keyframes WEB{
+ 
+     0%{width:0vw;}
+     100%{width:15vw;}
+ }
+
+ /* GALERIA FOTOS */
+.Galeria{
+    margin-left:4vw;
+    height: 2000px;
+}
+
+ .content img {
+     filter: grayscale(100%);
+     width:27vw;
+     margin:10px;
+ }
+ .content img:hover{
+     filter:grayscale(0%);
+ }
+
+ .row, .row2, .row3{
+    
+   
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+    
+  }
+
+  .Galeria h2{
+      padding-left:40vw;
+      padding-bottom: 1vw;
+  }
+  
+  /* FOOTER */
+  
+  footer {
+     height: 70px;
+     margin-top:20px;
+     transform: translate(-76px);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     align-content: center;
+
+     width:104vw;
+
+      background-color:#f7dc4f;
+  }
+  footer p{
+      margin-top: 25px;
+  }
+
+ 
+
+
+  /* IMAGEN PRINCIPAL CONTACTO */
+
+.ImagenPrincipalContacto img{
+    width: 98vw; 
+   
+ }
+ .ImagenPrincipalContacto{
+    
+     position:relative;
+     
+ }
+
+ 
+.Contacto{
+    width:50vw;
+    height:47vw;
+    background-color:#afdbdc ;
+    opacity:0.7;
+    border-radius: 5px;
+    
+    position:absolute;
+    
+
+    left: 23vw;
+    top:10vw;
+
+    padding-top:40px;
+    padding-left:60px;
+
+}
+
+.Contacto section{
+    
+    
+    
+    font-size: 20px;
+}
+
+input[type=submit] {
+    padding:10px 50px; 
+    background:rgb(151, 151, 151); 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+@media only screen and (max-width:700px){
+
+    .Contacto section{
+        height:500px;
+        font-size: 10px;
+    }
+
+    .Contacto{
+        height:90vw;
+        left: 27vw;
+        top:10vw;
+    
+        padding-top:2px;
+        padding-left:2px;
+    
+    }
+}
+
+    
